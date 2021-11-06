@@ -34,7 +34,7 @@ while True:
 
     elif cmd == 'copy':
         name = input('Введите имя файла/директории, которую вы хотите скопировать')
-        if name.startswith('/') and not basic_funcs.check_bounds('/'.join(work_directory), name):
+        if name.startswith('/') and not base.check_bounds('/'.join(work_directory), name):
             print('Что-то пошло не так')
             continue
         new_name = input('Введите название нового файла')
